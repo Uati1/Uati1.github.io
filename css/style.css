@@ -1,0 +1,330 @@
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  font-family: 'Lato', sans-serif; 
+  background-color: #000;
+  z-index: -3;
+}
+/* nav */
+nav{
+  position: fixed;
+  margin:0;
+  padding: 0;
+  width: 100%;
+  z-index: 1;
+  margin-top:50px;
+  font-size: 1em;
+  padding: 15px 0 15px 0;
+  z-index: 5;
+}
+.bg-holder{
+  height: 100%;
+  z-index: 4;
+  background-color: rgba(255,253,253, 0.95);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+}
+ul{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  display: inline-flex;
+  margin-left: auto;
+  padding: 15px;
+  z-index: 100;
+}
+ul li a{
+  text-decoration: none;
+  color: #4f513d;
+}
+ul li a:hover{
+  text-decoration: none;
+  color: #cc66cc;
+  cursor: pointer;
+}
+.logo{
+  margin-right: auto;
+  margin-left: 5%;
+}
+.button{
+  background-color: #f31341;
+  border-radius: 30% / 100%;
+  margin-left: 10px;
+  margin-right: 5%;
+}
+.button a{
+  color: #fff;
+  font-weight: 700;
+  padding: 0 5px 0 5px;
+}
+
+.hidden{
+  display: none;
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  border-radius: 100%;
+  background: rgba(255,253,253, 0.95);
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-mobile {
+    display: block;
+  }
+}
+
+#nav-toggle {
+  color: #000 !important;
+  top: 4px;
+  right: 22px;
+  padding: 30px;
+  position: absolute;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  margin-right: 10px;
+  background: #000;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+/* /nav */
+
+/* main */
+main{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: url(../images/cuteandcreepyliquids.png) ; 
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fadein, .colors, .white{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100% ;
+  -webkit-background-size: 100% auto !important;
+  -moz-background-size: 100% auto !important;
+  -o-background-size: 100% auto !important;
+  background-size: 100% auto !important;
+  background-repeat: no-repeat !important;
+  background-position: 0 !important;
+  overflow: hidden ;
+  z-index: 0;
+  opacity:0;
+  -webkit-transition: opacity 2000ms linear;
+  -moz-transition: opacity 2000ms linear;
+  -o-transition: opacity 2000ms linear;
+  -ms-transition: opacity 2000ms linear;
+  transition: opacity 2000ms linear;
+}
+.colors{
+  background-image: url(../images/colors.png) ; 
+  z-index: -2;
+  opacity: 1;
+}
+.white{
+  background-image: url(../images/white.png) ; 
+  z-index: 0;
+  opacity:1 ;
+}
+.aliz{
+  background-image: url(../images/aliz.png) ; 
+}
+.timmy{
+  background-image: url(../images/timmy.png); 
+}
+.barnet{
+  background-image: url(../images/barnet.png); 
+}
+.blake{
+  background-image: url(../images/blake.png); 
+}
+.bubba{
+  background-image: url(../images/bubba.png) ; 
+}
+.header{
+  background-image: url(../images/header.png); 
+}
+.jay{
+  background-image: url(../images/jay.png) ; 
+}
+.otto{
+  background-image: url(../images/otto.png) ; 
+}
+.lula{
+  background-image: url(../images/lula.png) ; 
+}
+.ronny{
+  background-image: url(../images/ronny.png) ; 
+}
+.trippy{
+  background-image: url(../images/trippy.png); 
+}
+
+/* /main */
+footer{
+  position: relative;
+  margin-bottom: -25%;
+  bottom: 25%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(255,253,253);
+  padding: 10px 0 10px 0;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+}
+footer .logo{
+  margin-right: 0;
+}
+@media only screen and (max-width: 576px) {
+  .txt{
+    font-size: 0.9em ;
+  }
+}
+@media (min-width:576px) and (max-width:768px) {
+  .txt{
+    font-size: 1.5em ;
+  }
+}
+@media (min-width:768px) and (max-width:992px) {
+  .txt{
+    font-size: 2em ;
+  }
+}
+@media all and (max-width:768px) {
+  .hideNav{
+    display: none;
+  }
+  nav{
+    margin-top:0;
+    font-size: 1em;
+  }
+  nav ul{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: rgba(255,253,253, 0.95);
+    height: 120vh;
+  }
+   nav ul li:first-child{
+    margin-top: 35vh;
+  }
+  nav ul li{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    height: 2em;
+    max-width: 100vh;
+    padding: 10px 0 10px 0;
+    z-index: 100;
+  }
+  nav ul li a{
+    margin: 0;
+    max-width: 100vh;
+    justify-content: center;
+  }
+  .logo{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .button{
+    border-radius: 30% / 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    min-width: 150px;
+    text-align: center;
+  }
+  .button a{
+    color: #fff;
+    font-weight: 700;
+    padding: 0 5px 0 5px;
+  }
+  footer{
+    margin-bottom: -15%;
+    bottom: 15%;
+  }
+  footer li{
+    display: none;
+    width: 50%;
+    text-align: center;
+    
+  }
+  footer li img{
+    margin: auto;
+  }
+  footer .logo{
+    display: initial;
+    display: inline-flex;
+    text-align: center;
+    width: 50%;
+    font-size: 0.7em;
+    padding:0;
+    margin: 0;
+  }
+}
