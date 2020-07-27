@@ -14,34 +14,27 @@ const positions = ()=>{
     $('.colors').height(height);
     harr= temp
 }
-
-$(window).scroll(function() {
-    var view = $(window).scrollTop()+ $( window ).height();
-    for(i=n;i<11;i++){
-      if(view>=harr[i]){
-        $(`${names[i]}`).css('opacity','1');
-        n+=1;
-      }
-    }
-  
-  });
-
-$( document ).ready(()=>{
-    positions();
-});
-
-$( window ).resize(()=>{
-    positions();
-});
-$(function() {
-    $('.toggler').click(function() {
-      $('.navbar').toggleClass('hideNav');
-      $('.bg-holder').toggleClass('hideNav');
-    });
-  });
-
   (function($) { // Begin jQuery
+
+    $( window ).resize(()=>{
+      positions();
+  });
+
     $(function() { // DOM ready
+
+      positions();
+
+      $(window).scroll(function() {
+        var view = $(window).scrollTop()+ $( window ).height();
+        for(i=n;i<11;i++){
+          if(view>=harr[i]){
+            $(`${names[i]}`).css('opacity','1');
+            n+=1;
+          }
+        }
+      
+      });
+
       // Toggle open and close nav styles on click
       $('#nav-toggle').click(function() {
         $('nav ul').slideToggle();
@@ -50,6 +43,10 @@ $(function() {
       // Hamburger to X toggle
       $('#nav-toggle').on('click', function() {
         this.classList.toggle('active');
+      });
+      $('.toggler').click(function() {
+        $('.navbar').toggleClass('hideNav');
+        $('.bg-holder').toggleClass('hideNav');
       });
     }); // end DOM ready
   })(jQuery); // end jQuery
