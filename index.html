@@ -6,56 +6,331 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="author" content="Szymon Łatacz">
         <link href="css/style.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext" rel="stylesheet"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
 		<!-- <link rel="icon" href="favicon.ico"> -->
-		<title>Way to web</title>
+		<title>WebBros</title>
 	</head>
 	<body>
         <nav class="primary">
             <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-            <div class="bg-holder hideNav"></div>
             <ul class="navbar hideNav">
-                <li class="logo">
+                <!-- <li class="logo">
                     <a href="/"><img src="" alt="logo"/></a>
-                </li>
-                <li><a href="tel:+48882939749"><i class="fas fa-phone-alt"></i> 882939749</a></li>
-                <li class="button"><a href="mailto:biuro@w2w.pl"><i class="far fa-envelope"></i> Napisz do nas</a></li>
+                </li> -->
+                <li><a class="navlink" id="1">HOME</a></li>
+                <li><a class="navlink" id="2">OFERTA</a></li>
+                <li><a class="navlink" id="3">PORTFOLIO</a></li>
+                <li><a class="navlink" id="4">KONTAKT</a></li>
             </ul>
             
         </nav>
-       
-        <main>
-            <div class="colors"></div>
-            <div class="white"></div>
-            <div class="wrapper"></div>
-            <div class="fadein header"> </div>
-            <div class="fadein timmy"> </div>
-            <div class="fadein bubba"> </div>
-            <div class="fadein otto"></div>
-            <div class="fadein trippy"></div>
-            <div class="fadein ronny"></div>
-            <div class="fadein barnet"></div>
-            <div class="fadein aliz"></div>
-            <div class="fadein lula"></div>
-            <div class="fadein blake"></div>
-            <div class="fadein jay"></div>
-        </main>
+        
+        <section class="slider-pages">
+
+          <article  class="js-scrolling__page js-scrolling__page-1 js-scrolling--active">
+            <h1 class="showcase-title">
+                <div class="left"></div>
+                <div class="top"></div>
+                Projekty, które inspirują.
+                </br>
+                <span class="slogan">   Rozwiązania napędzające zmiany</span>
+                <div class="bottom"></div>
+                <div class="right"></div>
+                
+            </h1>
+            <m id="mouse"></m>
             
-        <footer>
-            <ul>
-                <li class="logo">
-                    <a href="/"><img src="" alt="logo"/></a>
-                </li>
-                <li class="logo">&copy; Wszystkie prawa zastrzeżone</li>
-                <li><a href="tel:+48882939749"><i class="fas fa-phone-alt"></i> 882939749</a></li>
-                <li class="button"><a href="mailto:+48882939749"><i class="far fa-envelope"></i> Napisz do nas</a></li>
-            </ul>
-        </footer>
+            <div class="slider-page slider-page--left">
+              <div class="slider-page--skew">
+                <div class="slider-page__content">
+                  <!-- /.slider-page__title slider-page__title--big -->
+                  
+                  <!-- /.slider-page__title -->
+                  <!-- /.slider-page__description -->
+                </div>
+                <!-- /.slider-page__content -->
+              </div>
+              <!-- /.slider-page--skew -->
+            </div>
+            <!-- /.slider-page slider-page--left -->
+        
+            <div class="slider-page slider-page--right">
+              <div class="slider-page--skew">
+                <div class="slider-page__content">
+                    
+                </div>
+                <!-- /.slider-page__content -->
+              </div>
+              <!-- /.slider-page--skew -->
+            </div>
+            <!-- /.slider-page slider-page--right -->
+          </article>
+          <!-- /.js-scrolling__page js-scrolling__page-0 js-scrolling--active -->
+
+            <article id="#oferta" class="js-scrolling__page js-scrolling__page-2 clickable">
+              <div class="slider-page slider-page--left">
+                <div class="slider-page--skew">
+                  <div class="slider-page__content rwd-left">
+                    <div class="row">
+                      <button class="offer" target="www">
+                        <img src="./images/www.png" alt=""/>
+                        <p>Strony WWW</p>
+                      </button>
+                      <button class="offer" target="shop">
+                        <img src="./images/cart.png" alt=""/>
+                        <p>Sklepy internetowe</p>
+                      </button>
+                    </div>
+                    <div class="row">
+                      <button class="offer" target="seo">
+                        <img src="./images/seo-sem.png" alt=""/>
+                        <p>SEO/ SEM</p>
+                      </button>
+                      <button class="offer sc" target="socials">
+                        <img src="./images/fb.png" alt=""/>
+                        <p>Kampanie reklamowe </p>
+                      </button>
+                    </div>
+                    
+                  </div>
+                  <!-- /.slider-page__content -->
+                </div>
+                <!-- /.slider-page--skew -->
+              </div>
+              <!-- /.slider-page slider-page--left -->
+          
+              <div class="slider-page slider-page--right">
+                <div class="slider-page--skew">
+
+                  <div class="slider-page__content rwd-right">
+                    <h1 class="slider-page__title">
+                      <div class="left"></div>
+                      <div class="top"></div>
+                      Oferta
+                      <div class="bottom"></div>
+                      <div class="right"></div>
+                    </h1>
+                    <!-- /.slider-page__title -->
+                    <div class="toggleBlock oferta-opis">
+                      Pomoc w rozwijaniu przedsiębiorstw to nasza pasja, którą realizujemy w postaci tworzenia pięknych stron oraz sklepów internetowych.
+                      Tworzymy aplikacje w oparciu o nowoczesne technologie wspierane przez facebooka. Pomożemy Ci osiągnąć sukces w internecie dzięki pozycjonowaniu
+                      Twojej strony oraz kampaniom reklamowym. Kliknij w dowolny kafelek, żeby dowiedzieć się więcej!
+                      
+                    </div>
+                    <p>Kliknij w dowolny kafelek, żeby poznać szczegóły oraz przybliżoną cenę</p>
+                    <div class="www toggleBlock">
+                      <div class="row">
+                        <button class="offer opis">
+                          <h2>Wizytówka</h2>
+                          <p>
+                            responsywny design (RWD), działający na każdym urządzeniu</br>
+                            możliwość wykonania strony w WordPress</br>
+                            maksymalnie 2 podstrony</br>
+                            darmowe zdjęcia na stronę</br>
+                            strona wykonana na szablonie</br>
+                            1 wersja językowa</br>
+                            <span class="cena">499-999 zł</span>
+                          </p>
+                        </button>
+                        <button class="offer opis">
+                          <h2>Strona internetowa</h2>
+                          <p>
+                            dedykowany CMS</br>
+                            indywidualny projekt</br>
+                            dowolna ilość wersji językowych</br>
+                            <span class="cena">1499-2999 zł</span>
+                          </p>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="shop toggleBlock">
+                      <div class="row">
+                        <button class="offer opis">
+                          <h2>Prosty sklep</h2>
+                          <p>
+                            responsywny design (RWD), działający na każdym urządzeniu</br>
+                            strona wykonana na szablonie WooCommerce(WordPress)</br>
+                            obsługa newslettera</br>
+                            1 wersja językowa</br>
+                            <span class="cena">999-1999 zł</span>
+                          </p>
+                        </button>
+                        <button class="offer opis">
+                          <h2>Rozbudowany sklep</h2>
+                          <p>
+                            indywidualny projekt</br>
+                            konto użytkownika</br>
+                            rozbudowane funkcjonalności</br>
+                            <span class="cena">1499-3499 zł</span>
+                          </p>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="seo toggleBlock">
+                      <div class="row">
+                        <button class="offer opis">
+                          <h2>Strona WWW</h2>
+                          <p>
+                            dobór odpowiednich słów kluczowych</br>
+                            wybór fraz na podstawie statystyk Google</br>
+                            przygotowanie treści na stronę</br>
+                            budowanie sieci linków</br>
+                            <span class="cena">499 zł</span>
+                          </p>
+                        </button>
+                        <button class="offer opis">
+                          <h2>Sklep internetowy</h2>
+                          <p>
+                            dobór odpowiednich słów kluczowych</br>
+                            wybór fraz na podstawie statystyk Google</br>
+                            przygotowanie treści na stronę</br>
+                            optymalizacja opisów produktów</br>
+                            budowanie sieci linków</br>
+                            <span class="cena">499-1000 zł</span>
+                          </p>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="socials toggleBlock">
+                      <div class="row">
+                        <button class="offer opis">
+                          <h2>Kampanie reklamowe</h2>
+                          <p>
+                            Ułożymy strategię, stworzymy projekty, a następnie wykreujemy i zoptymalizujemy najlepszą kampanię e-marketingową.
+                            Największym wyzwaniem zarówno dla marek konsumenckich, jak i brandów B2B jest zdobycie rozwiązania,
+                            które znacznie zwiększy profity ich działalności przez obecność w social mediach. Oferujemy tworzenie profili, ich prowadzenie
+                            oraz płatne kampanie w takich serwisach jak facebook, instagram, pinterest, linkedIn. Każda kampania jest inna, zkontaktuj się z nami 
+                            w celu wyceny swojego pomysłu!
+                          </p>
+                        </button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                  <!-- /.slider-page__content -->
+                </div>
+                <!-- /.slider-page--skew -->
+              </div>
+              <!-- /.slider-page slider-page--right -->
+            </article>
+            <!-- /.js-scrolling__page js-scrolling__page-2 -->
+          
+          
+            <article id="#portfolio" class="js-scrolling__page js-scrolling__page-3 portfolio">
+              <div class="slider-page slider-page--left">
+                <div class="slider-page--skew">
+                  <div class="slider-page__content rwd-left ">
+                    <h1 class="slider-page__title">
+                      <div class="left"></div>
+                      <div class="top"></div>
+                      Portfolio
+                      <div class="bottom"></div>
+                      <div class="right"></div>
+                    </h1>
+                    <!-- /.slider-page__title -->
+                    <p class="slider-page__description">
+                      Zpoznaj się z kilkoma naszymi pracami, które realizowaliśmy
+                    </p>
+                    <p>Kliknij kafelek aby przejść do strony</p>
+                    <!-- /.slider-page__description -->
+                  </div>
+                  <!-- /.slider-page__content -->
+                </div>
+                <!-- /.slider-page--skew -->
+              </div>
+              <!-- /.slider-page slider-page--left -->
+          
+              <div class="slider-page slider-page--right">
+                <div class="slider-page--skew">
+                  <div class="slider-page__content rwd-right">
+                    <div class="row">
+                      <button class="offer">
+                        <img src="./images/wizytowka-strony-www.PNG" alt=""/>
+                        <p>Strona gabinetu</p>
+                      </button>
+                      <button class="offer">
+                        <img src="./images/sklep-internetowy.PNG" alt=""/>
+                        <p>Sklep internetowy</p>
+                      </button>
+                    </div>
+                    <div class="row">
+                      <button class="offer">
+                        <img src="./images/wizytowka-strony-www.PNG" alt=""/>
+                        <p>Strona agencji nieruchmosci </p>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- /.slider-page__content -->
+                </div>
+                <!-- /.slider-page--skew -->
+              </div>
+              <!-- /.slider-page slider-page--right -->
+            </article>
+            <!-- /.js-scrolling__page js-scrolling__page-3 -->
+            <article id="#kontakt" class="js-scrolling__page js-scrolling__page-4">
+              <div class="slider-page slider-page--left">
+                <div class="slider-page--skew">
+                  <div class="slider-page__content rwd-left">
+                    <h3 class="footer-h">
+                      <span>E-MAIL</span></br>
+                      <a href="mailto:slatacz1@gmail.com"><i class="fas fa-envelope"></i> slatacz1@gmail.com</a>
+                    </h3>
+                    <h3 class="footer-h">
+                      <span>TELEFON</span></br>
+                      <a href="tel:+48600967658"><i class="fas fa-phone"></i> 600 967 658</a>
+                    </h3>
+                  </div>
+                  <!-- /.slider-page__content -->
+                </div>
+                <!-- /.slider-page--skew -->
+              </div>
+              <!-- /.slider-page slider-page--left -->
+          
+              <div class="slider-page slider-page--right">
+                <div class="slider-page--skew">
+                  <div class="slider-page__content rwd-right">
+                    <h1 class="slider-page__title slider-page__title--big">
+                      <div class="left"></div>
+                      <div class="top"></div>
+                      Zapytaj o </br>
+                      <span>naszą ofertę</span>
+                      <div class="bottom"></div>
+                      <div class="right"></div>
+                    </h1>
+                    <!-- /.slider-page__title slider-page__title--big -->
+                    <!-- /.slider-page__title -->
+                    <div class="slider-page__description">
+                      <form id="contact-form" class="form" action="#" method="POST" role="form">                         
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" tabindex="1" required>
+                        </div>                            
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Temat" tabindex="2">
+                        </div>                            
+                        <div class="form-group">
+                            <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Wiadomość" tabindex="3" required></textarea>                                 
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-start-order">Send Message</button>
+                        </div> 
+                    </form>
+                    </div>
+                    <!-- /.slider-page__description -->
+                  </div>
+                  <!-- /.slider-page__content -->
+                </div>
+                <!-- /.slider-page--skew -->
+              </div>
+              <!-- /.slider-page slider-page--right -->
+            </article>
+            <!-- /.js-scrolling__page js-scrolling__page-1 js-scrolling--active -->
+          </section>
+          
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="./main.js"></script>
     </body>
